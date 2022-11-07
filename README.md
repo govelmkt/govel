@@ -5,7 +5,7 @@ This is the main repository for Govel website.
 First run on your terminal for cloning
 
 ````
-git@github.com:Govelmx/govel.git
+git clone git@github.com:Govelmx/govel.git
 ````
 
 Then
