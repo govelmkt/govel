@@ -11,7 +11,7 @@ const slides = [
   {
     path: '/slide2.jpg',
     href: '#form',
-    title: 'Las tendencias y guston personales cambian ¿Qué esperas?',
+    title: 'Las tendencias y gustos personales cambian ¿Qué esperas?',
     buttonText: '¡Renueva tu Hogar!'
   }
 ]
@@ -21,12 +21,10 @@ const HomePage = () => {
     <>
       <Navbar />
       <div
-        className='mt-24 absolute w-screen'
+        className='w-screen absolute mt-12'
         style={{ background: 'url(/bg.png) center center no-repeat' }}
       >
-        <div className='-mt-24'>
-          <Slider slides={slides} />
-        </div>
+        <Slider slides={slides} />
       </div>
     </>
   )
