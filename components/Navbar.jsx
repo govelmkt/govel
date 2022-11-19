@@ -4,7 +4,7 @@ import { AiOutlineInstagram, AiOutlineWhatsApp } from 'react-icons/ai'
 
 export const Navbar = () => {
   return (
-    <header className='flex justify-around items-center py-3'>
+    <header className='flex justify-around items-center py-2 '>
       <Image src='/Logo.svg' alt='Logo' width={340} height={90} />
       <nav>
         <ul className='flex gap-3 items-center uppercase'>
