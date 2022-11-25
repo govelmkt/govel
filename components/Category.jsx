@@ -2,7 +2,7 @@ export const Category = ({ name, img, href }) => {
   return (
     <div
       style={{
-        background: `url(${img}) no-repeat center center`,
+        background: `url(https://govel-backend-production.up.railway.app${img}) no-repeat center center`,
         backgroundSize: 'cover',
         height: '600px'
       }}
