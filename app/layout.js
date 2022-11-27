@@ -1,3 +1,4 @@
+import { Navbar } from '../components/Navbar'
 import { Exo } from '@next/font/google'
 import '../styles/globals.css'
 
@@ -9,7 +10,10 @@ export default function RootLayout ({ children }) {
       <head>
         <title>GOVEL</title>
       </head>
-      <body>{children}</body>
+      <body>
+        <Navbar />
+        {children}
+      </body>
     </html>
   )
 }

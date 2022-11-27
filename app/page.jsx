@@ -9,7 +9,7 @@ const HomePage = async () => {
   const slides = await fetchSlides()
   return (
     <>
-      <Navbar />
+
       <div
         className='w-full mt-24'
         style={{ background: 'url(/bg.png) center center no-repeat' }}
