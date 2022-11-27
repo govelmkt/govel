@@ -3,6 +3,7 @@ import { Categories } from '../components/Categories'
 import { Contact } from '../components/Contact'
 import { fetchSlides } from '../components/api'
 import { Footer } from '../components/Footer'
+import Link from 'next/link'
 
 const HomePage = async () => {
   const slides = await fetchSlides()
@@ -23,16 +24,15 @@ const HomePage = async () => {
 
       <Categories />
 
-      <section className='flex w-full -mt-6'>
+      <section className='flex w-full'>
         <div className='bg-[url(/bg2.jpg)] w-full -z-10 p-16 flex flex-col justify-center items-center'>
           <p className='text-5xl text-[#E5331F] font-bold'>Proyectos</p>
           <p className='text-[#E5331F]'>En curso o realizados</p>
         </div>
-        <div className='bg-[#E5331F] w-1/3 -z-10 flex items-center justify-center'>
-          <a className='text-3xl text-white'>¡Vamos a verlos!</a>
-        </div>
+        <Link href='/projects' className='bg-[#E5331F] w-1/3 flex items-center justify-center text-3xl text-white'>
+          ¡Vamos a verlos!
+        </Link>
       </section>
-
       <Contact />
 
       <Footer />
