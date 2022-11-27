@@ -4,7 +4,7 @@ export const Category = ({ name, img, href }) => {
       style={{
         background: `url(https://govel-backend-production.up.railway.app${img}) no-repeat center center`,
         backgroundSize: 'cover',
-        height: '600px'
+        height: '500px'
       }}
       className='flex justify-center items-center'
     >
