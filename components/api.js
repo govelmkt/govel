@@ -15,3 +15,7 @@ export const fetchSlides = async () => {
   const { data } = await json
   return data
 }
+
+export const postMessage = ({ data }) => {
+  window.alert(JSON.stringify(data, null, 2))
+}
