@@ -1,4 +1,3 @@
-import { Navbar } from '../components/Navbar'
 import { Slider } from '../components/Slider'
 import { Categories } from '../components/Categories'
 import { Contact } from '../components/Contact'
@@ -9,9 +8,8 @@ const HomePage = async () => {
   const slides = await fetchSlides()
   return (
     <>
-
       <div
-        className='w-full mt-24'
+        className='w-full mt-64'
         style={{ background: 'url(/bg.png) center center no-repeat' }}
       >
         <Slider slides={slides} />

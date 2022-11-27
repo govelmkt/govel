@@ -16,6 +16,14 @@ export const fetchSlides = async () => {
   return data
 }
 
+export const fetchProjects = async () => {
+  const endpoint = 'projects?populate=images'
+  const result = await fetch(`${baseApi}${endpoint}`)
+  const json = await result.json()
+  const { data } = await json
+  return data
+}
+
 export const postMessage = ({ data }) => {
   window.alert(JSON.stringify(data, null, 2))
 }
