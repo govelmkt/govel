@@ -3,9 +3,8 @@ import { Project } from '../../components/Project'
 
 const Projects = async () => {
   const projects = await fetchProjects()
-  console.log(projects)
   return (
-    <div className='bg-[#565555] '>
+    <div className='bg-[#565555]'>
       <div className='flex items-start justify-between w-full relative'>
         <div
           className='bg-[#565555] p-24 h-screen pt-96 w-1/2 -z-10'
@@ -19,7 +18,7 @@ const Projects = async () => {
             Tepatitlán de Morelos, Jalisco
           </p>
         </div>
-        <div className='w-1/2 bg-[#565555] h-screen mt-[6.7rem] absolute right-0 top-0'>
+        <div className='w-1/2 bg-[#565555] mt-[6.7rem] absolute right-0 top-0'>
           {projects && projects.map(project => <Project key={project.id} project={project} />)}
           {!projects && <div className='flex items-center w-1/2 justify-center mt-96 fixed text-white'>No hay proyectos para mostrar</div>}
         </div>

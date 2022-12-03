@@ -1,8 +1,9 @@
+import Link from 'next/link'
+
 export const Project = ({ project }) => {
   const { attributes } = project
-  const { name, images } = attributes
+  const { name, images, slug } = attributes
   const img = images.data[0].attributes.url
-  console.log(img)
   return (
     <div
       style={{
@@ -11,7 +12,7 @@ export const Project = ({ project }) => {
       }}
       className='flex flex-col items-center justify-center'
     >
-      <p className='p-8 bg-white text-[#E5331F]'>{name}</p>
+      <Link href={`projects/${slug}`} className='p-8 bg-white text-[#E5331F]'>{name}</Link>
     </div>
   )
 }

@@ -27,3 +27,20 @@ export const fetchProjects = async () => {
 export const postMessage = ({ data }) => {
   window.alert(JSON.stringify(data, null, 2))
 }
+
+export const fetchProject = async (slug) => {
+  const endpoint = `projects?filters\\[Slug\\][$eq]=${slug}&populate=images&populate=category`
+  const result = await fetch(`${baseApi}${endpoint}`)
+  const json = await result.json()
+  const { data } = await json
+  const { attributes } = data[0]
+  const { name, description, images, category } = await attributes
+  const { data: cat } = category
+  const { data: imgs } = images
+  return {
+    name,
+    description,
+    imgs,
+    cat
+  }
+}

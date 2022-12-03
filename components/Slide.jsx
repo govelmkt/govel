@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export const Slide = ({ slide }) => {
   return (
     <div
@@ -11,9 +13,9 @@ export const Slide = ({ slide }) => {
       <h3 className='text-2xl text-center text-white max-w-lg rounded p-2 backdrop-opacity-10 backdrop-invert bg-black/50'>
         {slide.attributes.title}
       </h3>
-      <button className='bg-white py-2 px-3 mt-3 text-[#E5331F] font-bold'>
+      <Link href={slide.attributes.path} className='bg-white py-2 px-3 mt-3 text-[#E5331F] font-bold'>
         {slide.attributes.buttonText}
-      </button>
+      </Link>
     </div>
 
   )
