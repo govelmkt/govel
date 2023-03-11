@@ -13,7 +13,7 @@ const HomePage = async () => {
         className='w-full mt-64'
         style={{ background: 'url(/bg.png) center center no-repeat' }}
       >
-        <Slider slides={slides} />
+        {slides && <Slider slides={slides} />}
         <section className='text-center py-10 text-white'>
           <h2 className='text-2xl text-bold'>¿Quienes somos?</h2>
           <p>En GOVEL, somos especialistas en el área de construcción y Diseño de Interiores con mas de 11 años de experiencia.</p>
