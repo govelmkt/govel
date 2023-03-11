@@ -10,7 +10,7 @@ export const Slide = ({ slide }) => {
       }}
       className='flex flex-col items-center justify-center -mt-24'
     >
-      <h3 className='text-2xl text-center text-white max-w-lg rounded p-2 backdrop-opacity-10 backdrop-invert bg-black/50'>
+      <h3 className='text-2xl text-center text-white max-w-lg rounded p-2 backdrop-opacity-10 backdrop-invert bg-black/50 uppercase'>
         {slide.attributes.title}
       </h3>
       <Link href={slide.attributes.path} className='bg-white py-2 px-3 mt-3 text-[#E5331F] font-bold'>
