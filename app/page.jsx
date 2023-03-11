@@ -23,7 +23,6 @@ const HomePage = async () => {
       </div>
 
       <Categories />
-
       <section className='flex w-full'>
         <div className='bg-[url(/bg2.jpg)] w-full -z-10 p-16 flex flex-col justify-center items-center'>
           <p className='text-5xl text-[#E5331F] font-bold'>Proyectos</p>
