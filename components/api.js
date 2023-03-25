@@ -29,7 +29,7 @@ export const postMessage = ({ data }) => {
 }
 
 export const fetchProject = async (slug) => {
-  const endpoint = `projects?filters\\[Slug\\][$eq]=${slug}&populate=images&populate=category`
+  const endpoint = `projects?filters[slug][$eq]=${slug}&populate=images&populate=category`
   const result = await fetch(`${baseApi}${endpoint}`, { cache: 'no-store' })
   const json = await result.json()
   const { data } = await json
